@@ -1,6 +1,10 @@
 jQuery(document).ready(function() {
 	var gifArr = ["Dachshund", "Beagle"];
-	$("#makeButton").click(makeButton());
+	$("#makeButton").click(function(){
+		makeButton();
+		$("#inputText").focus();
+		$("#inputText").select();	
+	});
 	document.onkeyup = function(e){
 		if(e.keyCode == 13){
 			makeButton();
