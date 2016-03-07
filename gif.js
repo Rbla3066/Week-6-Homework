@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
 	};
 	$("body").on("click", ".gifButton", function(){
 		var input = $(this).attr("id");
-		var url = "http://api.giphy.com/v1/gifs/search?q="+input+"&api_key=dc6zaTOxFJmzC "; 
+		var url = "https://api.giphy.com/v1/gifs/search?q="+input+"&api_key=dc6zaTOxFJmzC "; 
 		$.ajax({url: url, method: "GET"}).done(function(response) {
 			$("#gifs").html("");
 			console.log(response);
