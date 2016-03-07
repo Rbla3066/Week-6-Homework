@@ -22,9 +22,10 @@
 	border-bottom-width: 2px;
 	height: 150px;
 }
-#input{
+#makeButton {
 	margin-right: 35px;
 }
-#makeButton {
-	margin-left: 35px;
+#inputText{
+	border-radius: 5px;
+	font-size: 16px;
 }
